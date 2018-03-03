@@ -1,0 +1,21 @@
+{
+  "name": "phase2",
+  "version": "1.0.0",
+  "description": "to be used for your teamwork on the project",
+  "main": "data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "express-session": "^1.15.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^4.9.0"
+  }
+}
