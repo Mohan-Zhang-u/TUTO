@@ -1,0 +1,23 @@
+.logo {
+	margin-top: 2em;
+	width:5%;
+	background-color: #cdbfe3;
+	opacity : 0.6;
+}
+
+img.recommandpic {
+	height: 100%;width:100%;
+
+}
+
+.relative{position:relative;}
+.absolute-text{position: absolute; bottom:0; font-size:48px; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; background:rgba(251,251,251,0.5); color: #563d7c;
+	padding:10px 20px; width:100%; text-align: left;}
+.absolute-text a{font-size:16px; color:#b92b27;}
+
+.intro-tutors{color: #cdbfe3; font-size:48px;font-family:"Helvetica Neue"}
+
+
+
+/*consolas Helvetica Neue Helvetica Arial*/
+

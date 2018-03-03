@@ -1,0 +1,15 @@
+.logo {
+	margin-top: 2em;
+	width:5%;
+	background-color: #cdbfe3;
+	opacity : 0.6;
+}
+
+
+div.col-xs-4 input {
+	margin-bottom: 2em;
+}
+
+div.col-xs-4 button {
+	margin-bottom: 2em;
+}

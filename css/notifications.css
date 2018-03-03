@@ -1,0 +1,17 @@
+.logo {
+	margin-top: 2em;
+	width:5%;
+	background-color: #cdbfe3;
+	opacity : 0.6;
+}
+
+
+
+a:hover {
+	cursor: pointer;
+}
+
+
+.float-right {
+	float: right;
+}

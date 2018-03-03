@@ -1,0 +1,35 @@
+.logo {
+	margin-top: 2em;
+	width:5%;
+	background-color: #cdbfe3;
+	opacity : 0.6;
+}
+
+
+
+
+
+
+
+
+
+#schedule {
+	margin-bottom: 2em;
+}
+
+#schedule div label {
+	margin-right: 1em;
+}
+
+div span {
+	font-weight: bold;
+}
+
+.start, .end {
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+form {
+	margin-bottom: 2em;
+}
