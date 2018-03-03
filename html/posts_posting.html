@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="../css/posts_posting.css">
+	<title>posting</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<header align="center"><img class="logo" src="../logo/logo.png" alt="logo"></header>
+	
+	<nav id="nav-bar" class="navbar navbar-inverse">
+		<div class="container-fluid" id="container">
+			<div>
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index">TUTO</a>
+				</div>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="index">Home</a></li>
+				<li><a href="profile">Profile</a></li>
+				<li class="active"><a href="posts">Posts</a></li>
+				<li><a href="contact">Contact</a></li>
+			</ul>
+			<form class="navbar-form navbar-left" action="javascript:search()">
+				<div class="form-group">
+					<input id="search" type="text" class="form-control" placeholder="Search posting by title">
+				</div>
+				<button type="submit" class="btn btn-default">Search</button>
+			</form>
+		</div>
+	</nav>
+	
+	<!-- ================================================================================ !-->
+
+	<div class="container">
+		<form action="javascript:showInterest()">
+			<section>
+				<h3>
+					#<span id="postingNum"></span>: [<span id="position"></span>] 
+					<span id="title"></span> by 
+					<a href="javascript:openProfile()" id="poster"></a>
+				</h3>
+			</section>
+			<section>
+				<h3>Subject</h3>
+				<span id="subject"></span>
+			</section>
+			<section>
+				<h3>Academic background</h3>
+				<span id="academic"></span>
+			</section>
+			<section id="schedule">
+				<h3>Schedule</h3>
+			</section>
+			<section>
+				<h3>Desired pay</h3>
+				<span id="pay"></span>
+			</section>
+			<section>
+				<h3>Description</h3>
+				<span id="description"></span>
+			</section>
+			
+			<button type="submit" class="btn btn-primary btn-lg active">Show Interest</button>
+		</form>
+	</div>
+	
+	<script src="../js/posts_posting.js"></script>
+	<script src="../js/util.js"></script>
+</body>
+
+</html>

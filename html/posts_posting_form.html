@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="../css/posts_posting_form.css">
+	<title>posting form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<header align="center"><img class="logo" src="../logo/logo.png" alt="logo"></header>
+	
+	<nav id="nav-bar" class="navbar navbar-inverse">
+		<div class="container-fluid" id="container">
+			<div>
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index">TUTO</a>
+				</div>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="index">Home</a></li>
+				<li><a href="profile">Profile</a></li>
+				<li class="active"><a href="posts">Posts</a></li>
+				<li><a href="contact">Contact</a></li>
+			</ul>
+			<form class="navbar-form navbar-left" action="javascript:search()">
+				<div class="form-group">
+					<input id="search" type="text" class="form-control" placeholder="Search posting by title">
+				</div>
+				<button type="submit" class="btn btn-default">Search</button>
+			</form>
+		</div>
+	</nav>
+	
+	<div class="container">
+		<h1>Post new posting</h1>
+		<form action="javascript:submit()">
+			<label for="radio">*Who are you?</label>
+			<div class="radio">
+				<label class="radio-inline"><input type="radio" name="position" id="tutor" required>Tutor</label>
+				<label class="radio-inline"><input type="radio" name="position" id="student" required>Student</label>
+			</div>
+			<div class="form-group">
+				<label for="sel">*Choose subject:</label>
+				<select class="form-control" id="sel" required>
+					<option>Math</option>
+					<option>History</option>
+					<option>Art</option>
+					<option>Computer Science</option>
+					<option>etc</option>
+				</select>
+			</div>
+	
+			<div class="form-group">
+				<label class="control-label" for="title">*Title:</label>
+				<input type="text" class="form-control" id="title" placeholder="Some interesting title!" required>
+			</div>
+			
+			<div class="form-group">
+				<label class="control-label" for="academic">*Academic background:</label>
+				<textarea rows="5" class="form-control" id="academic" placeholder="Tell us what you know" required></textarea>
+			</div>
+			
+			<div id="schedule">
+				<label class="control-label" >Schedule(optional):</label><br>
+				<button type="button" class="btn btn-default" onClick="addMore()" id="add-btn">add</button>
+			</div>
+			
+			<div class="form-group">
+				<label class="control-label" for="pay">Pay(optional):</label>
+				<input type="text" class="form-control" id="pay" placeholder="Hourly pay">
+			</div>
+			
+			<div class="form-group">
+				<label class="control-label" for="description">*Others:</label>
+				<textarea rows="10" class="form-control" id="description" placeholder="Anything else you want to add to your post" required></textarea>
+				* fields are required.
+			</div>
+			
+			<button type="submit" class="btn btn-primary btn-lg active">POST</button>
+		</form>
+	</div>
+	
+	<script src="../js/posts_posting_form.js"></script>
+	<script src="../js/util.js"></script>
+</body>
+</html>
